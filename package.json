@@ -1,5 +1,5 @@
 {
-  "name": "name",
+  "name": "pom-pom",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "bootstrap": "^5.0.2",
     "core-js": "^3.11.1"
   }
 }

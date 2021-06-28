@@ -1,0 +1,114 @@
+/*
+Color Palette:
+
+Green:
+31B189 Dark
+7ACE67 Light
+Yellow:
+FFC872 Dark
+FFE3B3 Light
+
+Fuentes:
+font-family: 'Dela Gothic One', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+@font-face {
+    font-family: "ds-digi";
+    src: url(https://res.cloudinary.com/dvaqrycs1/raw/upload/v1624902131/samples/DS-DIGIT_ynrrcj.TTF) format(truetype);
+}
+
+*{
+    margin:0px;
+    padding: 0;
+
+}
+body{
+    background-color: #FFE3B3 ;
+}
+.ctn-title{
+    display:flex;
+    margin: 0px auto;
+    width: 100%;
+    background-color: #FFC872;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    box-shadow: 0px 3px 5px #cccc;
+}
+.ctn-title h1{
+    font-family: 'Dela Gothic One', Arial, Helvetica, sans-serif; 
+    text-align: center;
+    font-size: 60px;
+    color: #31B189;
+}
+.ctn-title .ctn-fill{
+    flex-grow: 1;
+}
+.ctn-title img{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #31B189;
+}
+.ctn-main{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+.ctn-usage{
+    justify-self: center;
+    word-wrap: break-word;
+}
+p{
+    font-weight: 400;
+    font-size: 20px;
+}
+.ctn-panel{
+    display: flex;
+    flex-wrap: wrap row;
+    border-radius: .25rem;
+}
+.nav-link{
+    color:  #000;
+}
+.ctn-time-selector{
+    flex-grow: 1;
+}
+.ctn-timer{
+    flex-grow: 3;
+}
+
+#pom.active, #block.active{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    flex-grow: 1;
+}
+#timer{
+    display: block;
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 60px;
+    font-family: ds-digital;
+}
+#timer-name{
+    display: block;
+    margin: 20px auto;
+}
+.ctn-timer{
+    display: flex;
+    flex-direction: column;
+}
+.ctn-controls{
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
