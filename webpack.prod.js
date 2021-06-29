@@ -31,14 +31,14 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                exclude: /styles\.css$/i,
+                exclude: /main\.css$/i,
                 use: [
                     'style-loader',
                     'css-loader',
                 ]
             },
             {
-                test: /styles\.css$/,
+                test: /main\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',

@@ -1,4 +1,5 @@
-export const writingEffect = (element, timeInt) => {
+import { CountDown } from './countdown'
+const writingEffect = (element, timeInt) => {
     const textVal = element.innerText
     element.innerText = ''
     let counter = 0
@@ -10,4 +11,8 @@ export const writingEffect = (element, timeInt) => {
             counter ++
         }
     }, timeInt)
+}
+export {
+    writingEffect,
+    CountDown
 }
