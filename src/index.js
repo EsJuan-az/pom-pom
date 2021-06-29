@@ -20,7 +20,11 @@ let lastTime = localStorage["lastTime"] ? localStorage["lastTime"] : undefined;
 
 //Other events
 const notifyEnd = () => {
-    return new Notification(`${name} has Ended Up :)`)
+    const options = {
+        body: `${ lastTime } have been passed successfully`,
+        icon: './assets/camaleon.ico'
+    }
+    return new Notification(`${name} has Ended Up`, options)
 }
 const disabledAll = (elements, disabled = true) => {
     for(let element of elements){
