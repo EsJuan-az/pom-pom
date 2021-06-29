@@ -15,7 +15,7 @@ const timeOptions = document.querySelectorAll(".time-option");
 let myCountDown = localStorage["time"] ? new CountDown(JSON.parse(localStorage["time"]).minutes , JSON.parse(localStorage["time"]).seconds) : new CountDown();
 timer.innerText = myCountDown.toString();
 let interval;
-let lastTime = localStorage["lastTime"] ? localStorage["lastTime"] : 0;
+let lastTime = localStorage["lastTime"] ? localStorage["lastTime"] : "0";
 
 
 //Other events
@@ -83,7 +83,7 @@ const startTime = () => {
         if( myCountDown.decrease() ){
             notifyEnd()
             stopTime();
-
+            restartTime()
         }
         timer.innerText = myCountDown.toString();
         localStorage["time"] = JSON.stringify( myCountDown.getData() );
