@@ -15,13 +15,13 @@ const timeOptions = document.querySelectorAll(".time-option");
 let myCountDown = localStorage["time"] ? new CountDown(JSON.parse(localStorage["time"]).minutes , JSON.parse(localStorage["time"]).seconds) : new CountDown();
 timer.innerText = myCountDown.toString();
 let interval;
-let lastTime = localStorage["lastTime"] ? localStorage["lastTime"] : undefined;
+let lastTime = localStorage["lastTime"] ? localStorage["lastTime"] : 0;
 
 
 //Other events
 const notifyEnd = () => {
     const options = {
-        body: `${ lastTime } have been passed successfully`,
+        body: `${ lastTime } minutes have been passed successfully`,
         icon: './assets/camaleon.ico'
     }
     return new Notification(`${name} has Ended Up`, options)
