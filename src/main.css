@@ -73,6 +73,7 @@ p{
     display: flex;
     flex-wrap: wrap row;
     border-radius: .25rem;
+    background-color: #FFC872;
 }
 .nav-link{
     color:  #000;
@@ -97,6 +98,8 @@ p{
     text-align: center;
     font-size: 60px;
     font-family: ds-digital;
+    border-radius: .25rem;
+
 }
 #timer-name{
     display: block;
